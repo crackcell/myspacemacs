@@ -30,7 +30,7 @@ values."
    dotspacemacs-configuration-layer-path '()
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
-   '(
+   '(python
      markdown
      html
      ;; ----------------------------------------------------------------
@@ -150,8 +150,8 @@ values."
    ;dotspacemacs-default-font '("Source Code Pro"
    ;dotspacemacs-default-font '("Inziu Iosevka SC"
    dotspacemacs-default-font '("Iosevka Term"
-                               :size 14
-                               :weight demibold
+                               :size 13
+                               :weight semi-bold
                                :width normal
                                :powerline-scale 1.1)
    ;; The leader key
@@ -276,7 +276,7 @@ values."
    ;;                       text-mode
    ;;   :size-limit-kb 1000)
    ;; (default nil)
-   dotspacemacs-line-numbers nil
+   dotspacemacs-line-numbers t
    ;; Code folding method. Possible values are `evil' and `origami'.
    ;; (default 'evil)
    dotspacemacs-folding-method 'evil
@@ -352,3 +352,23 @@ you should place your code here."
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+(defun dotspacemacs/emacs-custom-settings ()
+  "Emacs custom settings.
+This is an auto-generated function, do not modify its content directly, use
+Emacs customize menu instead.
+This function is called at the very end of Spacemacs initialization."
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(org-trello-current-prefix-keybinding "C-c o" nil (org-trello))
+ '(package-selected-packages
+   '(blacken code-cells company-anaconda anaconda-mode counsel-gtags counsel swiper ivy cython-mode dap-mode lsp-docker lsp-treemacs bui treemacs cfrs pfuture posframe yaml evil-matchit ggtags helm-cscope helm-gtags helm-pydoc importmagic epc ctable concurrent live-py-mode lsp-pyright lsp-python-ms lsp-mode spinner nose pip-requirements pipenv load-env-vars pippel poetry transient py-isort pydoc pyenv-mode pythonic pylookup pytest pyvenv smartparens sphinx-doc stickyfunc-enhance window-purpose imenu-list xcscope yapfify lv projectile pkg-info epl flx evil goto-chg undo-tree bind-key packed helm avy helm-core async popup mmm-mode markdown-toc markdown-mode gh-md web-mode tagedit slim-mode scss-mode sass-mode pug-mode helm-css-scss haml-mode emmet-mode company-web web-completion-data ox-reveal ox-gfm org-projectile org-category-capture s dash org-present org-pomodoro alert log4e gntp org-mime org-download htmlize gnuplot ac-ispell helm-company helm-c-yasnippet fuzzy company-statistics company-quickhelp pos-tip company auto-yasnippet yasnippet auto-complete which-key use-package pcre2el macrostep hydra helm-themes helm-swoop helm-projectile helm-mode-manager helm-make helm-flx helm-descbinds helm-ag exec-path-from-shell evil-visualstar evil-escape elisp-slime-nav diminish bind-map auto-compile ace-window ace-jump-helm-line)))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
+)
