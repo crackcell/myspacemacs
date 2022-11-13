@@ -1,0 +1,34 @@
+#name : head
+#contributor : Menglong TAN <tanmenglong@gmail.com>
+# --
+%%%-------------------------------------------------------------------
+%%% @author Mengong TAN <tanmenglong@gmail.com>
+%%% @copyright (c) `(format-time-string "%Y")`, Menglong TAN
+%%% @doc
+%%% ${1:file desc}
+%%% @end
+%%% Created : `(current-time-string)`
+%%%-------------------------------------------------------------------
+
+-module(`(file-name-sans-extension (file-name-nondirectory (buffer-file-name)))`).
+-author('tanmenglong@gmail.com').
+-export([${2:start/0}]).
+
+%%%===================================================================
+%%% API
+%%%===================================================================
+
+$3
+
+%%%===================================================================
+%%% Internal functions
+%%%===================================================================
+
+
+%%%===================================================================
+%%% Unit tests
+%%%===================================================================
+
+-ifdef(TEST).
+-include_lib("eunit/include/eunit.hrl").
+-endif.

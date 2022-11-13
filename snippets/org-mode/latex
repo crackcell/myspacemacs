@@ -1,0 +1,8 @@
+#name : latex
+#contributor : Menglong TAN <tanmenglong@gmail.com>
+# --
+#+BEGIN_HTML
+\begin{eqnarray}
+$0
+\end{eqnarray}
+#+END_HTML

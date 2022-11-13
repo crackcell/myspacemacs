@@ -1,0 +1,7 @@
+#name : html.latex_equation
+#contributor : Menglong TAN <tanmenglong@gmail.com>
+# --
+#+BEGIN_HTML
+\begin{eqnarray}
+\end{eqnarray}
+#+END_HTML

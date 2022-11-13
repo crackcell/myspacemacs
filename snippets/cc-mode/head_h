@@ -1,0 +1,40 @@
+#name : head_h
+# --
+/* -*- encoding: utf-8; indent-tabs-mode: nil -*- */
+
+/***************************************************************
+ *
+ * Copyright (c) `(format-time-string "%Y")`, Menglong TAN <tanmenglong@gmail.com>
+ *
+ * This program is free software; you can redistribute it
+ * and/or modify it under the terms of the GPL licence
+ *
+ **************************************************************/
+
+#ifndef ${1:_`(upcase (file-name-nondirectory (file-name-sans-extension (buffer-file-name))))`_H_}
+#define $1
+
+/**
+ * $3
+ *
+ * @file `(file-name-nondirectory (buffer-file-name))`
+ * @author Menglong TAN <tanmenglong@gmail.com>
+ * @date `(current-time-string)`
+ *
+ **/
+
+${2:#include <stdio.h>}
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+$4
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif /* $1 */
+
+/* vim: set expandtab shiftwidth=4 tabstop=4: */

@@ -1,0 +1,12 @@
+#name : doc.func
+# --
+/**
+ * $1
+ *
+ * @param [in] param_name : param_description
+ * @return 0 for sucess, 1 for failure
+ * @see
+ * @note
+ * @author tanmenglong
+ * @date `(current-time-string)`
+ */

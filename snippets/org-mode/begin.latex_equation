@@ -1,0 +1,8 @@
+#name : begin.latex_equation
+# expand-env: ((yas/indent-line 'fixed) (yas/wrap-around-region 'nil))
+# --
+#+BEGIN_LATEX
+\begin{equation}
+$0
+\end{equation}
+#+END_LATEX

@@ -1,0 +1,27 @@
+#name : head.book
+# --
+\documentclass[a4paper,11pt]{book}
+
+%% set font to support cjk
+\usepackage{fontspec}
+\setmainfont{Microsoft Yahei}
+
+%% header & footer
+\usepackage{fancyhdr}
+\fancyhf{}
+\fancyhead[LE]{\leftmark} \fancyhead[RO]{\nouppercase{\rightmark}} \fancyfoot[LE,RO]{\thepage}
+\pagestyle{fancy}
+\begin{document}
+
+\title{${1:untitle}}
+\author{Menglong TAN}
+\maketitle
+
+\tableofcontents
+\chapter{ch1}
+this is ch1
+\section{sec1}
+xxx
+\subsection{subsec1}
+$0
+\end{document}

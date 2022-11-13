@@ -33,12 +33,14 @@ values."
    '(python
      markdown
      html
-     ;; ----------------------------------------------------------------
-     ;; Example of useful layers you may want to use right away.
-     ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
-     ;; <M-m f e R> (Emacs style) to install them.
-     ;; ----------------------------------------------------------------
+     emacs-lisp
+     git
      helm
+     (conda :variables conda-anaconda-home "~/.work/anaconda3")
+     (treemacs :variables
+               treemacs-use-follow-mode 't
+               treemacs-use-filewatch-mode t
+               treemacs-lock-width t)
      (auto-completion :variables
                       auto-completion-return-key-behavior 'complete
                       auto-completion-tab-key-behavior 'cycle
@@ -48,16 +50,13 @@ values."
                       auto-completion-enable-help-tooltip t
                       auto-completion-enable-sort-by-usage t
                       auto-completion-private-snippets-directory nil)
-     ;; better-defaults
-     emacs-lisp
-     ;; git
-     ;; markdown
      (org :variables
           org-enable-github-support t
           org-enable-reveal-js-support t
           org-enable-hugo-support t
           org-enable-trello-support t
           org-enable-sticky-header t)
+     ;; better-defaults
      ;; (shell :variables
      ;;        shell-default-height 30
      ;;        shell-default-position 'bottom)
@@ -150,7 +149,7 @@ values."
    ;dotspacemacs-default-font '("Source Code Pro"
    ;dotspacemacs-default-font '("Inziu Iosevka SC"
    dotspacemacs-default-font '("Iosevka Term"
-                               :size 13
+                               :size 14
                                :weight semi-bold
                                :width normal
                                :powerline-scale 1.1)
@@ -321,10 +320,7 @@ before packages are loaded. If you are unsure, you should try in setting them in
     '(("melpa-cn" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
       ("org-cn"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/org/")
       ("gnu-cn"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")))
-  (setq initial-frame-alist '((width . 100) (height . 50)))
-  (spacemacs/toggle-truncate-lines-on)
-  (add-hook 'text-mode-hook 'spacemacs/toggle-visual-line-navigation-on)
-  (global-unset-key (kbd "C-z"))
+  (setq initial-frame-alist '((width . 150) (height . 50)))
   )
 
 (defun dotspacemacs/user-config ()
@@ -334,6 +330,9 @@ layers configuration.
 This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
+  (spacemacs/toggle-truncate-lines-on)
+  (spacemacs/toggle-visual-line-navigation-on)
+  (treemacs)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will

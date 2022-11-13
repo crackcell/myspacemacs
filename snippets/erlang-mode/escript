@@ -1,0 +1,24 @@
+#name : escript skeleton
+#contributor : Menglong TAN <tanmenglong@gmail.com>
+# --
+#!/usr/bin/env escript
+
+%%%-------------------------------------------------------------------
+%%% @author Menglong TAN <tanmenglong@gmail.com>
+%%% @copyright (c) `(format-time-string "%Y")`, Menglong TAN
+%%% @doc
+%%% ${1:file desc}
+%%% @end
+%%% Created : `(current-time-string)`
+%%%-------------------------------------------------------------------
+
+-author("Menglong TAN").
+-export([main/1]).
+
+%%%===================================================================
+%%% External API
+%%%===================================================================
+
+main(_) ->
+	ok.
+$1

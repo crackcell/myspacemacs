@@ -1,0 +1,47 @@
+#name : application skeleton
+#contributor : Menglong TAN <tanmenglong@gmail.com>
+# --
+%%%-------------------------------------------------------------------
+%%% @author Menglong TAN <tanmenglong@gmail.com>
+%%% @copyright (c) `(format-time-string "%Y")`, Menglong TAN
+%%% @doc
+%%% ${1:file desc}
+%%% @end
+%%% Created : `(current-time-string)`
+%%%-------------------------------------------------------------------
+
+-module(`(file-name-sans-extension (file-name-nondirectory (buffer-file-name)))`).
+-author("Menglong TAN").
+-behaviour(application).
+
+%% Application callbacks
+-export([start/2, stop/1]).
+
+%%%===================================================================
+%%% Application callbacks
+%%%===================================================================
+
+%% @private
+start(_StartType, _StartArgs) ->
+	case 'TopSupervisor':start_link() of
+		{ok, Pid} ->
+			{ok, Pid};
+		Error ->
+			Error
+	end.
+
+%% @private
+stop(_State) ->
+	ok.
+
+%%%===================================================================
+%%% Internal functions
+%%%===================================================================
+
+
+%%%===================================================================
+%%% Unit tests
+%%%===================================================================
+-ifdef(TEST).
+-include_lib("eunit/include/eunit.hrl").
+-endif.

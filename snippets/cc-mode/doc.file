@@ -1,0 +1,25 @@
+#name : doc.file
+# --
+/* -*- encoding: utf-8; indent-tabs-mode: nil -*- */
+
+/***************************************************************
+ *
+ * Copyright (c) `(format-time-string "%Y")`, Menglong TAN <tanmenglong@gmail.com>
+ *
+ * This program is free software; you can redistribute it
+ * and/or modify it under the terms of the GPL licence
+ *
+ **************************************************************/
+
+/**
+ * $2
+ *
+ * @file `(file-name-nondirectory (buffer-file-name))`
+ * @author Menglong TAN <tanmenglong@gmail.com>
+ * @date `(current-time-string)`
+ *
+ **/
+
+$3
+
+/* vim: set expandtab shiftwidth=2 tabstop=2: */

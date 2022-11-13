@@ -1,0 +1,10 @@
+#name : src.grapviz
+#contributor : crackcell <tanmenglong@gmail.com>
+# --
+#+BEGIN_SRC dot :file $1.png
+digraph {
+  rankdir=LR;
+  node [shape=record, fontname="YaHei Consolas Hybrid", fontsize=11];
+  $0
+}
+#+END_SRC$>
